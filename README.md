@@ -46,8 +46,8 @@ $ python run.py --source 0
 Make sure to select the right index of imaging device (by default is 0). If you use any webcam then the indext might be 1 or etc.
 
 ## How to use
-If all the steps are done correctly, the program should appear like this.<br>
-<img src="./static/first_look.png"><br>
+If all the steps are done correctly, the program should appear like this.
+![first look](static/first_look.png)
 The "Run" option will directly infer the stored model, meanwhile the "Retrain Model" option will generate the new model that stores the provided dataset inside "data" folder. 
 If the new model generated succesfully, the files inside 'data' directory are no longer needed since it automatically store the keypoints needed. 
 For the first use, select Retrain Model, then Run. 
