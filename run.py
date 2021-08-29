@@ -123,6 +123,7 @@ class GameScreen:
             with open(os.path.join(path)) as csv_file:
                 csv_reader = csv.reader(csv_file, delimiter=',')
                 for i, row in enumerate(csv_reader):
+                    print(row)
                     if(i > 0):
                         csv_time.append(row[0])
                         csv_pic.append(row[1])

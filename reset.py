@@ -5,7 +5,7 @@ class Reset:
     def __init__(self):
         self.inventory_name = ['Apple', 'Banana', 'Orange', 'Mango', 'Grape']
         self.inventory_count = [10, 10, 10, 10, 10]
-        self.default_personal_count = 5
+        self.default_personal_count = 0
         self.identities = None
         self.inventories = None
         self.inventory_current_count = None
@@ -34,8 +34,9 @@ class Reset:
     def reset_csv_logs(self):
         filepath = './report.csv'
         with open(filepath, "w+") as file:
-            writer = csv.writer(file)
+            writer = csv.writer(file, lineterminator='')
             writer.writerow(['timestamp', 'PIC', 'logs'])
+        
 
     def reset_pickle(self):
         self.inventory_current_count = self.inventory_count.copy()
