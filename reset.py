@@ -3,7 +3,7 @@ import pickle
 
 class Reset:
     def __init__(self):
-        self.inventory_name = ['Apple', 'Banana', 'Orange', 'Mango', 'Grape']
+        self.inventory_name = ['Cabinet 1', 'Cabinet 2', 'Cabinet 3', 'Cabinet 4', 'Cabinet 5']
         self.inventory_count = [10, 10, 10, 10, 10]
         self.default_personal_count = 0
         self.identities = None
